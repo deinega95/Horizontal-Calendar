@@ -5,6 +5,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.LinearSmoothScroller;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
+import android.util.Log;
 
 /**
  * @author Mulham-Raee
@@ -25,6 +26,7 @@ public class HorizontalLayoutManager extends LinearLayoutManager {
 
     @Override
     public void smoothScrollToPosition(RecyclerView recyclerView, RecyclerView.State state, int position) {
+        Log.e("+++ smoothScrollToPos", String.valueOf(position));
         LinearSmoothScroller smoothScroller = new LinearSmoothScroller(recyclerView.getContext()) {
 
             @Override

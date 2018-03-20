@@ -17,7 +17,6 @@ class DateViewHolder extends RecyclerView.ViewHolder {
     TextView textBottom;
     View selectionView;
     View layoutContent;
-    RecyclerView eventsRecyclerView;
 
     DateViewHolder(View rootView) {
         super(rootView);
@@ -25,6 +24,5 @@ class DateViewHolder extends RecyclerView.ViewHolder {
         textMiddle = rootView.findViewById(R.id.hc_text_middle);
         textBottom = rootView.findViewById(R.id.hc_text_bottom);
         layoutContent = rootView.findViewById(R.id.hc_layoutContent);
-        eventsRecyclerView = rootView.findViewById(R.id.hc_events_recyclerView);
     }
 }

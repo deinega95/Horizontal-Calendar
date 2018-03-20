@@ -14,7 +14,6 @@ import devs.mulham.horizontalcalendar.adapter.HorizontalCalendarBaseAdapter;
 import devs.mulham.horizontalcalendar.adapter.MonthsAdapter;
 import devs.mulham.horizontalcalendar.model.CalendarItemStyle;
 import devs.mulham.horizontalcalendar.model.HorizontalCalendarConfig;
-import devs.mulham.horizontalcalendar.utils.CalendarEventsPredicate;
 import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
 import devs.mulham.horizontalcalendar.utils.HorizontalCalendarPredicate;
 import devs.mulham.horizontalcalendar.utils.HorizontalSnapHelper;
@@ -70,7 +69,7 @@ public final class HorizontalCalendar {
     }
 
     /* Init Calendar View */
-    void init(View rootView, final Calendar defaultSelectedDate, HorizontalCalendarPredicate disablePredicate, CalendarEventsPredicate eventsPredicate) {
+    void init(View rootView, final Calendar defaultSelectedDate, HorizontalCalendarPredicate disablePredicate) {
         calendarView = rootView.findViewById(calendarId);
         calendarView.setHasFixedSize(true);
         calendarView.setHorizontalScrollBarEnabled(false);
@@ -86,9 +85,9 @@ public final class HorizontalCalendar {
         }
 
         if (mode == Mode.MONTHS){
-            mCalendarAdapter = new MonthsAdapter(this, startDate, endDate, disablePredicate, eventsPredicate);
+            mCalendarAdapter = new MonthsAdapter(this, startDate, endDate, disablePredicate);
         } else {
-            mCalendarAdapter = new DaysAdapter(this, startDate, endDate, disablePredicate, eventsPredicate);
+            mCalendarAdapter = new DaysAdapter(this, startDate, endDate, disablePredicate);
         }
 
         calendarView.setAdapter(mCalendarAdapter);
@@ -325,8 +324,6 @@ public final class HorizontalCalendar {
         int numberOfDatesOnScreen;
         // Specified which dates should be disabled
         private HorizontalCalendarPredicate disablePredicate;
-        // Add events to each Date
-        private CalendarEventsPredicate eventsPredicate;
 
         private ConfigBuilder configBuilder;
 
@@ -374,10 +371,6 @@ public final class HorizontalCalendar {
             return this;
         }
 
-        public Builder addEvents(CalendarEventsPredicate predicate) {
-            eventsPredicate = predicate;
-            return this;
-        }
 
         public ConfigBuilder configure() {
             if (configBuilder == null) {
@@ -419,7 +412,7 @@ public final class HorizontalCalendar {
             HorizontalCalendarConfig config = configBuilder.createConfig();
 
             HorizontalCalendar horizontalCalendar = new HorizontalCalendar(this, config, defaultStyle, selectedItemStyle);
-            horizontalCalendar.init(rootView, defaultSelectedDate, disablePredicate, eventsPredicate);
+            horizontalCalendar.init(rootView, defaultSelectedDate, disablePredicate);
             return horizontalCalendar;
         }
     }

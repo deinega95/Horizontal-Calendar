@@ -1,6 +1,5 @@
 package devs.mulham.raee.sample;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -12,14 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
-import java.util.Random;
 
 import devs.mulham.horizontalcalendar.HorizontalCalendar;
-import devs.mulham.horizontalcalendar.model.CalendarEvent;
-import devs.mulham.horizontalcalendar.utils.CalendarEventsPredicate;
 import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
 
 public class MainActivity extends AppCompatActivity {
