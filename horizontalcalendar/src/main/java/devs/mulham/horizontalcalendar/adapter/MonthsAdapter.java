@@ -44,10 +44,7 @@ public class MonthsAdapter extends HorizontalCalendarBaseAdapter<DateViewHolder,
         Calendar month = getItem(position);
         HorizontalCalendarConfig config = horizontalCalendar.getConfig();
 
-        final Integer selectorColor = horizontalCalendar.getConfig().getSelectorColor();
-        if (selectorColor != null) {
-            holder.selectionView.setBackgroundColor(selectorColor);
-        }
+
 
         holder.textMiddle.setText(DateFormat.format(config.getFormatMiddleText(), month));
         holder.textMiddle.setTextSize(TypedValue.COMPLEX_UNIT_SP, config.getSizeMiddleText());

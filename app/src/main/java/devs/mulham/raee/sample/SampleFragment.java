@@ -35,14 +35,12 @@ public class SampleFragment extends Fragment {
 
         horizontalCalendar = new HorizontalCalendar.Builder(rootView, R.id.calendarView)
                 .range(startDate, endDate)
-                .datesNumberOnScreen(5)
+                .datesNumberOnScreen(7)
                 .configure()
-                    .formatTopText("MMM")
                     .formatMiddleText("dd")
                     .formatBottomText("EEE")
                     .textSize(14f, 24f, 14f)
-                    .showTopText(true)
-                    .showBottomText(true)
+                    .showTopText(false)
                     .textColor(Color.LTGRAY, Color.WHITE)
                 .end()
                 .build();

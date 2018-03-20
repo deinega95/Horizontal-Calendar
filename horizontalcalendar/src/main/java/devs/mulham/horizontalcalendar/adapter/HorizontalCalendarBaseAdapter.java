@@ -117,7 +117,6 @@ public abstract class HorizontalCalendarBaseAdapter<VH extends DateViewHolder, T
             viewHolder.itemView.setEnabled(!isDisabled);
             if (isDisabled && (disabledItemStyle != null)) {
                 applyStyle(viewHolder, disabledItemStyle);
-                viewHolder.selectionView.setVisibility(View.INVISIBLE);
                 return;
             }
         }
@@ -125,12 +124,10 @@ public abstract class HorizontalCalendarBaseAdapter<VH extends DateViewHolder, T
         // Selected Day
         if (position == selectedItemPosition) {
             applyStyle(viewHolder, horizontalCalendar.getSelectedItemStyle());
-            viewHolder.selectionView.setVisibility(View.VISIBLE);
         }
         // Unselected Days
         else {
             applyStyle(viewHolder, horizontalCalendar.getDefaultStyle());
-            viewHolder.selectionView.setVisibility(View.INVISIBLE);
         }
     }
 

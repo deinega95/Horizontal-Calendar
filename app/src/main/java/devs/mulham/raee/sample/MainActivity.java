@@ -46,32 +46,14 @@ public class MainActivity extends AppCompatActivity {
 
         horizontalCalendar = new HorizontalCalendar.Builder(this, R.id.calendarView)
                 .range(startDate, endDate)
-                .datesNumberOnScreen(5)
+                .datesNumberOnScreen(7)
                 .configure()
-                    .formatTopText("MMM")
-                    .formatMiddleText("dd")
-                    .formatBottomText("EEE")
-                    .showTopText(true)
-                    .showBottomText(true)
-                    .textColor(Color.LTGRAY, Color.WHITE)
-                    .colorTextMiddle(Color.LTGRAY, Color.parseColor("#ffd54f"))
+                .formatTopText("E")
+                .showBottomText(false)
+                .textSize(14f, 24f, 0f)
                 .end()
                 .defaultSelectedDate(defaultSelectedDate)
-                .addEvents(new CalendarEventsPredicate() {
 
-                    Random rnd = new Random();
-                    @Override
-                    public List<CalendarEvent> events(Calendar date) {
-                        List<CalendarEvent> events = new ArrayList<>();
-                        int count = rnd.nextInt(6);
-
-                        for (int i = 0; i <= count; i++){
-                            events.add(new CalendarEvent(Color.rgb(rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256)), "event"));
-                        }
-
-                        return events;
-                    }
-                })
                 .build();
 
         Log.i("Default Date", DateFormat.format("EEE, MMM d, yyyy", defaultSelectedDate).toString());

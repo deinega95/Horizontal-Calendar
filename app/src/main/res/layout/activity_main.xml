@@ -26,8 +26,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:textColorSelected="#FFFF"
-            app:sizeBottomText="14sp"
-            app:sizeMiddleText="20sp"/>
+            app:textColorNormal="#a5a5a5"
+            app:sizeTopText="14sp"
+            app:sizeMiddleText="16sp"/>
 
     </android.support.design.widget.AppBarLayout>
 

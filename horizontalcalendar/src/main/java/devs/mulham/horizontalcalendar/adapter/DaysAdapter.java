@@ -42,11 +42,6 @@ public class DaysAdapter extends HorizontalCalendarBaseAdapter<DateViewHolder, C
         Calendar day = getItem(position);
         HorizontalCalendarConfig config = horizontalCalendar.getConfig();
 
-        final Integer selectorColor = horizontalCalendar.getConfig().getSelectorColor();
-        if (selectorColor != null) {
-            holder.selectionView.setBackgroundColor(selectorColor);
-        }
-
         holder.textMiddle.setText(DateFormat.format(config.getFormatMiddleText(), day));
         holder.textMiddle.setTextSize(TypedValue.COMPLEX_UNIT_SP, config.getSizeMiddleText());
 

@@ -154,6 +154,7 @@ public final class HorizontalCalendar {
                 return;
             }
 
+
             calendarView.smoothScrollToPosition(relativeCenterPosition);
         }
     }
