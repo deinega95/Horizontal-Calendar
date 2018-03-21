@@ -1,24 +1,21 @@
-package devs.mulham.horizontalcalendar.adapter;
+package devs.deinega.horizontalcalendar.adapter;
 
 import android.os.Build;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.Calendar;
-import java.util.Collections;
-import java.util.List;
 
-import devs.mulham.horizontalcalendar.HorizontalCalendar;
-import devs.mulham.horizontalcalendar.HorizontalCalendarView;
-import devs.mulham.horizontalcalendar.HorizontalLayoutManager;
-import devs.mulham.horizontalcalendar.R;
-import devs.mulham.horizontalcalendar.model.CalendarItemStyle;
-import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
-import devs.mulham.horizontalcalendar.utils.HorizontalCalendarPredicate;
-import devs.mulham.horizontalcalendar.utils.Utils;
+import devs.deinega.horizontalcalendar.HorizontalCalendarView;
+import devs.deinega.horizontalcalendar.model.CalendarItemStyle;
+import devs.deinega.horizontalcalendar.utils.HorizontalCalendarListener;
+import devs.deinega.horizontalcalendar.utils.HorizontalCalendarPredicate;
+import devs.deinega.horizontalcalendar.HorizontalCalendar;
+import devs.deinega.horizontalcalendar.HorizontalLayoutManager;
+import devs.deinega.horizontalcalendar.R;
+import devs.deinega.horizontalcalendar.utils.Utils;
 
 /**
  * Base class for all adapters for {@link HorizontalCalendarView HorizontalCalendarView}

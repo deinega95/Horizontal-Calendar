@@ -1,4 +1,4 @@
-package devs.mulham.horizontalcalendar.model;
+package devs.deinega.horizontalcalendar.model;
 
 /**
  * @author Mulham-Raee

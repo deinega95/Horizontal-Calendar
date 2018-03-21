@@ -1,4 +1,4 @@
-package devs.mulham.horizontalcalendar;
+package devs.deinega.horizontalcalendar;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -8,9 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 
-import devs.mulham.horizontalcalendar.adapter.HorizontalCalendarBaseAdapter;
-import devs.mulham.horizontalcalendar.model.CalendarItemStyle;
-import devs.mulham.horizontalcalendar.model.HorizontalCalendarConfig;
+import devs.deinega.horizontalcalendar.adapter.HorizontalCalendarBaseAdapter;
+import devs.deinega.horizontalcalendar.model.CalendarItemStyle;
+import devs.deinega.horizontalcalendar.model.HorizontalCalendarConfig;
 
 /**
  * See {devs.mulham.horizontalcalendar.R.styleable#HorizontalCalendarView HorizontalCalendarView Attributes}

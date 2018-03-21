@@ -1,8 +1,8 @@
-package devs.mulham.horizontalcalendar.utils;
+package devs.deinega.horizontalcalendar.utils;
 
 import java.util.Calendar;
 
-import devs.mulham.horizontalcalendar.HorizontalCalendarView;
+import devs.deinega.horizontalcalendar.HorizontalCalendarView;
 
 /**
  * @author Mulham-Raee

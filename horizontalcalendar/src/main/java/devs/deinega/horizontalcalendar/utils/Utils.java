@@ -1,4 +1,4 @@
-package devs.mulham.horizontalcalendar.utils;
+package devs.deinega.horizontalcalendar.utils;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
-import devs.mulham.horizontalcalendar.HorizontalCalendar;
+import devs.deinega.horizontalcalendar.HorizontalCalendar;
 
 /**
  * @author Mulham-Raee

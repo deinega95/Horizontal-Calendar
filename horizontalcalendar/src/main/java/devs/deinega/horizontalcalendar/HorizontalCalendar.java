@@ -1,4 +1,4 @@
-package devs.mulham.horizontalcalendar;
+package devs.deinega.horizontalcalendar;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -9,15 +9,15 @@ import android.view.View;
 
 import java.util.Calendar;
 
-import devs.mulham.horizontalcalendar.adapter.DaysAdapter;
-import devs.mulham.horizontalcalendar.adapter.HorizontalCalendarBaseAdapter;
-import devs.mulham.horizontalcalendar.adapter.MonthsAdapter;
-import devs.mulham.horizontalcalendar.model.CalendarItemStyle;
-import devs.mulham.horizontalcalendar.model.HorizontalCalendarConfig;
-import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
-import devs.mulham.horizontalcalendar.utils.HorizontalCalendarPredicate;
-import devs.mulham.horizontalcalendar.utils.HorizontalSnapHelper;
-import devs.mulham.horizontalcalendar.utils.Utils;
+import devs.deinega.horizontalcalendar.adapter.DaysAdapter;
+import devs.deinega.horizontalcalendar.adapter.HorizontalCalendarBaseAdapter;
+import devs.deinega.horizontalcalendar.adapter.MonthsAdapter;
+import devs.deinega.horizontalcalendar.model.CalendarItemStyle;
+import devs.deinega.horizontalcalendar.model.HorizontalCalendarConfig;
+import devs.deinega.horizontalcalendar.utils.HorizontalCalendarListener;
+import devs.deinega.horizontalcalendar.utils.HorizontalCalendarPredicate;
+import devs.deinega.horizontalcalendar.utils.HorizontalSnapHelper;
+import devs.deinega.horizontalcalendar.utils.Utils;
 
 
 /**

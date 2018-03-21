@@ -1,4 +1,4 @@
-package devs.mulham.raee.sample;
+package devs.deinega.sample;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -14,8 +14,9 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 
-import devs.mulham.horizontalcalendar.HorizontalCalendar;
-import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
+import devs.deinega.horizontalcalendar.HorizontalCalendar;
+import devs.deinega.horizontalcalendar.utils.HorizontalCalendarListener;
+import devs.deinega.raee.sample.R;
 
 public class MainActivity extends AppCompatActivity {
 

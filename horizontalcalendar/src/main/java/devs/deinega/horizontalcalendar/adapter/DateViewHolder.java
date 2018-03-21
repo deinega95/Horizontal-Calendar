@@ -1,10 +1,10 @@
-package devs.mulham.horizontalcalendar.adapter;
+package devs.deinega.horizontalcalendar.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import devs.mulham.horizontalcalendar.R;
+import devs.deinega.horizontalcalendar.R;
 
 /**
  * @author Mulham-Raee

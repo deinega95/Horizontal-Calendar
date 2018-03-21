@@ -1,10 +1,9 @@
-package devs.mulham.horizontalcalendar;
+package devs.deinega.horizontalcalendar;
 
 import android.graphics.drawable.Drawable;
-import android.support.annotation.DrawableRes;
 
-import devs.mulham.horizontalcalendar.model.CalendarItemStyle;
-import devs.mulham.horizontalcalendar.model.HorizontalCalendarConfig;
+import devs.deinega.horizontalcalendar.model.CalendarItemStyle;
+import devs.deinega.horizontalcalendar.model.HorizontalCalendarConfig;
 
 /**
  * @author Mulham-Raee

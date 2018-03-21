@@ -1,4 +1,4 @@
-package devs.mulham.horizontalcalendar.adapter;
+package devs.deinega.horizontalcalendar.adapter;
 
 import android.text.format.DateFormat;
 import android.util.TypedValue;
@@ -7,12 +7,12 @@ import android.view.View;
 import java.util.Calendar;
 import java.util.List;
 
-import devs.mulham.horizontalcalendar.HorizontalCalendar;
-import devs.mulham.horizontalcalendar.HorizontalCalendarView;
-import devs.mulham.horizontalcalendar.R;
-import devs.mulham.horizontalcalendar.model.HorizontalCalendarConfig;
-import devs.mulham.horizontalcalendar.utils.HorizontalCalendarPredicate;
-import devs.mulham.horizontalcalendar.utils.Utils;
+import devs.deinega.horizontalcalendar.HorizontalCalendarView;
+import devs.deinega.horizontalcalendar.model.HorizontalCalendarConfig;
+import devs.deinega.horizontalcalendar.utils.HorizontalCalendarPredicate;
+import devs.deinega.horizontalcalendar.HorizontalCalendar;
+import devs.deinega.horizontalcalendar.R;
+import devs.deinega.horizontalcalendar.utils.Utils;
 
 /**
  * custom adapter for {@link HorizontalCalendarView HorizontalCalendarView}
