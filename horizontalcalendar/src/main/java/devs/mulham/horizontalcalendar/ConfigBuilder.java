@@ -1,6 +1,7 @@
 package devs.mulham.horizontalcalendar;
 
 import android.graphics.drawable.Drawable;
+import android.support.annotation.DrawableRes;
 
 import devs.mulham.horizontalcalendar.model.CalendarItemStyle;
 import devs.mulham.horizontalcalendar.model.HorizontalCalendarConfig;

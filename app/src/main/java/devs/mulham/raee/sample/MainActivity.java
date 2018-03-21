@@ -1,5 +1,6 @@
 package devs.mulham.raee.sample;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -44,8 +45,11 @@ public class MainActivity extends AppCompatActivity {
                 .configure()
                 .formatTopText("E")
                 .showBottomText(false)
-                .textSize(14f, 24f, 0f)
+                .textSize(12f, 16f, 0f)
+                .textColor(Color.BLACK, Color.WHITE)
+                //.selectorColor(Color.WHITE)
                 .end()
+
                 .defaultSelectedDate(defaultSelectedDate)
 
                 .build();

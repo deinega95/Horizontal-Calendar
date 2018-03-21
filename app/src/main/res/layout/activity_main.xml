@@ -24,11 +24,7 @@
         <devs.mulham.horizontalcalendar.HorizontalCalendarView
             android:id="@+id/calendarView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:textColorSelected="#FFFF"
-            app:textColorNormal="#a5a5a5"
-            app:sizeTopText="14sp"
-            app:sizeMiddleText="16sp"/>
+            android:layout_height="wrap_content" />
 
     </android.support.design.widget.AppBarLayout>
 

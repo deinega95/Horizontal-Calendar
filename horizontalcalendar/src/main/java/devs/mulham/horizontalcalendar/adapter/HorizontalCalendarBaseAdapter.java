@@ -14,6 +14,7 @@ import java.util.List;
 import devs.mulham.horizontalcalendar.HorizontalCalendar;
 import devs.mulham.horizontalcalendar.HorizontalCalendarView;
 import devs.mulham.horizontalcalendar.HorizontalLayoutManager;
+import devs.mulham.horizontalcalendar.R;
 import devs.mulham.horizontalcalendar.model.CalendarItemStyle;
 import devs.mulham.horizontalcalendar.utils.HorizontalCalendarListener;
 import devs.mulham.horizontalcalendar.utils.HorizontalCalendarPredicate;
@@ -95,10 +96,12 @@ public abstract class HorizontalCalendarBaseAdapter<VH extends DateViewHolder, T
         // Selected Day
         if (position == selectedItemPosition) {
             applyStyle(viewHolder, horizontalCalendar.getSelectedItemStyle());
+            viewHolder.textMiddle.setBackgroundResource(R.drawable.background_date_selected);
         }
         // Unselected Days
         else {
             applyStyle(viewHolder, horizontalCalendar.getDefaultStyle());
+            viewHolder.textMiddle.setBackgroundResource(0);
         }
     }
 

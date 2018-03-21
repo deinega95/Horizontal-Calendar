@@ -12,6 +12,7 @@ public class CalendarItemStyle {
     private int colorMiddleText;
     private int colorBottomText;
     private Drawable background;
+    private Drawable selectedBackground;
 
     public CalendarItemStyle(){
     }
@@ -35,6 +36,13 @@ public class CalendarItemStyle {
         this.colorTopText = colorTopText;
         return this;
     }
+
+    public CalendarItemStyle setDrawableSelectedBackground(Drawable background) {
+        this.selectedBackground = background;
+        return this;
+    }
+
+
 
     public int getColorMiddleText() {
         return colorMiddleText;
